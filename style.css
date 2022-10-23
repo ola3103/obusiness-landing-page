@@ -35,6 +35,9 @@ html {
   background-repeat: no-repeat;
   background-attachment: fixed;
   background-size: cover;
+  -o-background-size: cover;
+  -moz-background-size: cover;
+  -webkit-background-size: cover;
   background-position: top right;
 }
 .overlay {
@@ -401,6 +404,9 @@ html {
   background-repeat: no-repeat;
   background-attachment: fixed;
   background-size: cover;
+  -o-background-size: cover;
+  -moz-background-size: cover;
+  -webkit-background-size: cover;
   background-position: center;
   position: absolute;
   left: 50%;
@@ -724,6 +730,10 @@ Business Start
   background: url("/images/business.png");
   background-attachment: fixed;
   background-position: center;
+  background-size: cover;
+  -o-background-size: cover;
+  -moz-background-size: cover;
+  -webkit-background-size: cover;
 }
 
 .business--container .business--overlay {
