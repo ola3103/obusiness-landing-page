@@ -33,7 +33,6 @@ html {
   position: relative;
   background: url("/images/hero.png");
   background-repeat: no-repeat;
-  background-attachment: fixed;
   background-size: cover;
   -o-background-size: cover;
   -moz-background-size: cover;
@@ -366,8 +365,10 @@ html {
 .about .about--banner {
   background: url("/images/banner.png");
   background-repeat: no-repeat;
-  background-attachment: fixed;
   background-size: cover;
+  -o-background-size: cover;
+  -moz-background-size: cover;
+  -webkit-background-size: cover;
   background-position: center;
   height: 40vh;
   z-index: 1;
@@ -402,7 +403,6 @@ html {
 .about .about--banner .about--overlay .banner--img--box {
   background: url("/images/about-img.png");
   background-repeat: no-repeat;
-  background-attachment: fixed;
   background-size: cover;
   -o-background-size: cover;
   -moz-background-size: cover;
@@ -432,7 +432,6 @@ html {
   position: absolute;
   left: 50%;
   transform: translate(-50%, -50%);
-  /* bottom: -16%; */
   bottom: 0;
   margin-bottom: -4.5rem;
   padding: 1rem 1rem;
@@ -554,15 +553,12 @@ html {
 .testimonial {
   padding: 5rem 3rem;
 }
-/* .testimonial--container {
-  position: relative;
-} */
+
 .testimonial--container .testimonial--header {
   text-align: center;
   margin-bottom: 1rem;
 }
 .testimonial--slider {
-  /* padding: 1rem 0; */
   margin: 0 auto;
   position: relative;
   height: 15rem;
@@ -640,7 +636,6 @@ html {
 }
 
 .dots__dot--active {
-  /* background-color: #fff; */
   background-color: var(--main-color);
   opacity: 1;
 }
@@ -723,12 +718,11 @@ Business Start
   ----------------------------------------------------------
 */
 .business {
-  padding: 4rem 0;
+  padding: 5rem 0;
 }
 
 .business--container {
   background: url("/images/business.png");
-  background-attachment: fixed;
   background-position: center;
   background-size: cover;
   -o-background-size: cover;
@@ -782,7 +776,7 @@ Footer Start
   ----------------------------------------------------------
 */
 footer {
-  padding: 0 2rem;
+  padding: 1rem 2rem;
 }
 .footer--container {
   padding: 1rem 0;
