@@ -1,3 +1,10 @@
+if (history.scrollRestoration) {
+  history.scrollRestoration = "manual";
+} else {
+  window.onbeforeunload = function () {
+    window.scrollTo(0, 0);
+  };
+}
 /* Navigation Bar */
 const icon = document.querySelector(".icon--box");
 const closeIcon = document.querySelector(".close--icon");
@@ -168,14 +175,11 @@ slider();
 const allSection = document.querySelectorAll(".section--animate");
 console.log(allSection);
 
-// allSection.forEach((section) => {
-
-// });
-
 const revealSection = function (entries, observer) {
   const [entry] = entries;
   if (!entry.isIntersecting) return;
   entry.target.classList.remove("section--hide");
+  observer.unobserve(entry.target);
 };
 
 const sectionObserver = new IntersectionObserver(revealSection, {
